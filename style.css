@@ -1,0 +1,62 @@
+html, body {
+    font-family: "DM Sans", sans-serif;
+    background-color: #7B79B8;
+    font-size: 1.05rem;
+}
+
+.text-justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+img {
+    float:inline-start;
+}
+
+.mybtn {
+    margin-top: 10px;
+    background-color: #5D568B;
+    border-color: #5D568B;
+}
+
+.shad {
+    margin-top: 40px;
+    text-align: center;
+    padding: 1em;
+    background-color: #A59AEC;
+    -webkit-box-shadow: 0px 0px 13px 2px #000000;
+    -moz-box-shadow: 0px 0px 13px 2px #000000;
+    -o-box-shadow: 0px 0px 13px 2px #000000;
+    box-shadow: 0px 0px 13px 2px #000000;
+}
+
+.volume-slider {
+    width: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease, width 0.5s ease;
+}
+
+.volume-control-container:hover .volume-slider {
+    width: 100%;
+    /* Adjust based on the desired width when visible */
+    opacity: 1;
+}
+
+div {
+    overflow: hidden;
+}
+
+.marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.marquee {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
